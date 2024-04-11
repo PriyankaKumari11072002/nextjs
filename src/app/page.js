@@ -2,10 +2,18 @@ import Image from "next/image";
 
 export default function Home() {
   return (
+   
+    // react server component (rsc) : rsc is a new architecture itroduced by react team in v18 which was quickly embraced by nextjs
+    //client and server component . **  default all components are server component type in nextjs .
+    //they have the ability to run tasks like reading files or fetching data from a database .
+    //hwever they don't have ability to use hooks or handle user intractions.
+    //necessarry to add client  -> use client at the top of the  component file 
+
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
+          Get started by editing  hello worls &nbsp;
           <code className="font-mono font-bold">src/app/page.js</code>
         </p>
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
@@ -38,7 +46,7 @@ export default function Home() {
           priority
         />
       </div>
-
+ <div className="relative  text-center  text-green-600">i have setup my first project</div>
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
